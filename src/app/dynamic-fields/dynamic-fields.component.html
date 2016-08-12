@@ -1,0 +1,5 @@
+<div [formGroup]="formGroup">
+  <div *ngFor="let field of fields | async">
+    <dcl-wrapper [metaData]="field"></dcl-wrapper>
+  </div>
+</div>

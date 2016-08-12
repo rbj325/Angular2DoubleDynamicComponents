@@ -1,0 +1,7 @@
+<form [formGroup]="form" novalidate>
+  <div *ngFor="let formStep of steps; let idx = index">
+    <dcl-wrapper [metaData]="formStep"></dcl-wrapper>
+  </div>
+  <br />
+  <button color="primary" type="submit">Submit</button>
+</form>
